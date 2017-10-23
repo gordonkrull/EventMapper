@@ -9,7 +9,21 @@
 import Nimble
 import Quick
 
-class EventServiceSpec: QuickSpec {
+@testable import SideProject
+
+fileprivate class HttpServiceStub: HttpService {
     
+}
+
+class EventServiceSpec: QuickSpec {
+    override func spec() {
+        describe("EventServiceSpec") {
+            var subject: EventService!
+            beforeEach {
+                subject = RealEventService()
+            }
+            
+        }
+    }
 }
 

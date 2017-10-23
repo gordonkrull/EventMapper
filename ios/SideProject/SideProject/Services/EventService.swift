@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol EventService {
+    func getEvents() -> [Event]
+}
+
+class RealEventService: EventService {
+    func getEvents() -> [Event] {
+        return []
+    }
+}
