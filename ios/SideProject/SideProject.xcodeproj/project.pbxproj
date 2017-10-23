@@ -17,6 +17,7 @@
 		AB73331B1F9E884000D67701 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7333191F9E883F00D67701 /* Nimble.framework */; };
 		AB73331C1F9E884000D67701 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73331A1F9E883F00D67701 /* Quick.framework */; };
 		AB73331E1F9E897700D67701 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331D1F9E897700D67701 /* Event.swift */; };
+		AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331F1F9E8FE700D67701 /* HttpService.swift */; };
 		ABA9F54A1F9658D700FA149E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA9F5491F9658D700FA149E /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		AB7333191F9E883F00D67701 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AB73331A1F9E883F00D67701 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SideProject/Models/Event.swift; sourceTree = SOURCE_ROOT; };
+		AB73331F1F9E8FE700D67701 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		ABA9F5491F9658D700FA149E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				AB73330C1F9E81F900D67701 /* EventService.swift */,
+				AB73331F1F9E8FE700D67701 /* HttpService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				AB73330D1F9E81F900D67701 /* EventService.swift in Sources */,
 				AB4F61D71F7D51C8004224AB /* ViewController.swift in Sources */,
 				AB4F61D51F7D51C8004224AB /* AppDelegate.swift in Sources */,
+				AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
