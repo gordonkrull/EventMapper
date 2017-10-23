@@ -154,8 +154,7 @@
 			children = (
 				AB73331D1F9E897700D67701 /* Event.swift */,
 			);
-			name = Models;
-			path = "New Group";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AB73330A1F9E81BA00D67701 /* Services */ = {

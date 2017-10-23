@@ -11,10 +11,20 @@ import MapKit
 import CoreLocation
 
 class ViewController: UIViewController {
-    
     var locationManager: CLLocationManager!
+    var eventService: EventService!
+    var events: [Event]!
+    
     @IBOutlet var mapView: MKMapView!
     
+    init(_ eventService: EventService) {
+        super.init(nibName: String(describing: ViewController.self), bundle: Bundle.main)
+        self.eventService = eventService
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +51,13 @@ class ViewController: UIViewController {
     }
     
     func seedData() {
+        let event = Event(coordinate: CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093),
+                          title: "TITLE",
+                          subtitle: "SUBTITLE")
         let annotation1 = MKPointAnnotation()
-        annotation1.coordinate = CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093)
-        annotation1.title = "TITLE"
-        annotation1.subtitle = "SUBTITLE"
+        annotation1.coordinate = event.coordinate
+        annotation1.title = event.title
+        annotation1.subtitle = event.subtitle
         mapView.addAnnotation(annotation1)
     }
 }
