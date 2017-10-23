@@ -5,13 +5,13 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SideProject" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="pvn-Cm-lvp" id="opR-fZ-UBu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0oS-q6-HXj"/>
             </connections>
         </placeholder>
@@ -21,30 +21,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvn-Cm-lvp" customClass="MKMapView">
-                    <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="602"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="pvn-Cm-lvp" secondAttribute="height" multiplier="1:1" id="NWO-3r-DaC"/>
-                    </constraints>
                 </view>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTf-HQ-z1S">
-                    <rect key="frame" x="110" y="448" width="97" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTf-HQ-z1S">
+                    <rect key="frame" x="110" y="627" width="25" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-Cu-lle">
-                    <rect key="frame" x="277" y="448" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-Cu-lle">
+                    <rect key="frame" x="205" y="627" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pvn-Cm-lvp" secondAttribute="trailing" id="2Qb-KU-nKh"/>
+                <constraint firstItem="vTf-HQ-z1S" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="110" id="4oQ-Fj-nMP"/>
                 <constraint firstItem="pvn-Cm-lvp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9hW-nL-M3G"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uAF-Cu-lle" secondAttribute="bottom" constant="10" id="EFF-9a-uc7"/>
                 <constraint firstItem="pvn-Cm-lvp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GAS-AZ-WEU"/>
+                <constraint firstItem="uAF-Cu-lle" firstAttribute="leading" secondItem="vTf-HQ-z1S" secondAttribute="trailing" constant="70" id="RVI-O9-tc0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vTf-HQ-z1S" secondAttribute="bottom" constant="10" id="kKF-lz-pjJ"/>
+                <constraint firstItem="vTf-HQ-z1S" firstAttribute="top" secondItem="pvn-Cm-lvp" secondAttribute="bottom" constant="5" id="zYw-xQ-2r4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>

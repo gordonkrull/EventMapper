@@ -12,11 +12,12 @@
 		AB4F61DC1F7D51C8004224AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F61DB1F7D51C8004224AB /* Assets.xcassets */; };
 		AB4F61F51F7D51C8004224AB /* SideProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */; };
 		AB4F62031F7D51EA004224AB /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */; };
+		AB73330D1F9E81F900D67701 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73330C1F9E81F900D67701 /* EventService.swift */; };
+		AB7333111F9E824B00D67701 /* EventServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7333101F9E824B00D67701 /* EventServiceSpec.swift */; };
+		AB73331B1F9E884000D67701 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7333191F9E883F00D67701 /* Nimble.framework */; };
+		AB73331C1F9E884000D67701 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73331A1F9E883F00D67701 /* Quick.framework */; };
+		AB73331E1F9E897700D67701 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331D1F9E897700D67701 /* Event.swift */; };
 		ABA9F54A1F9658D700FA149E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA9F5491F9658D700FA149E /* ViewController.xib */; };
-		ABDE877F1F7D55C0005B20F0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDE877D1F7D55C0005B20F0 /* Quick.framework */; };
-		ABDE87801F7D55C0005B20F0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDE877E1F7D55C0005B20F0 /* Nimble.framework */; };
-		ABDE87811F7D55CB005B20F0 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABDE877D1F7D55C0005B20F0 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABDE87821F7D55D4005B20F0 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABDE877E1F7D55C0005B20F0 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +37,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AB4F62041F7D53E0004224AB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				ABDE87821F7D55D4005B20F0 /* Nimble.framework in CopyFiles */,
-				ABDE87811F7D55CB005B20F0 /* Quick.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		AB4F61D11F7D51C8004224AB /* SideProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4F61D41F7D51C8004224AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +49,12 @@
 		AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectUITests.swift; sourceTree = "<group>"; };
 		AB4F61F61F7D51C8004224AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		AB73330C1F9E81F900D67701 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		AB7333101F9E824B00D67701 /* EventServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceSpec.swift; sourceTree = "<group>"; };
+		AB7333191F9E883F00D67701 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AB73331A1F9E883F00D67701 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SideProject/Models/Event.swift; sourceTree = SOURCE_ROOT; };
 		ABA9F5491F9658D700FA149E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		ABDE877D1F7D55C0005B20F0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		ABDE877E1F7D55C0005B20F0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABDE877F1F7D55C0005B20F0 /* Quick.framework in Frameworks */,
-				ABDE87801F7D55C0005B20F0 /* Nimble.framework in Frameworks */,
+				AB73331B1F9E884000D67701 /* Nimble.framework in Frameworks */,
+				AB73331C1F9E884000D67701 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +108,10 @@
 		AB4F61D31F7D51C8004224AB /* SideProject */ = {
 			isa = PBXGroup;
 			children = (
+				AB73330B1F9E81E400D67701 /* ViewControllers */,
+				AB73330A1F9E81BA00D67701 /* Services */,
+				AB7333071F9E784000D67701 /* Models */,
 				AB4F61D41F7D51C8004224AB /* AppDelegate.swift */,
-				AB4F61D61F7D51C8004224AB /* ViewController.swift */,
 				AB4F61DB1F7D51C8004224AB /* Assets.xcassets */,
 				AB4F61E01F7D51C8004224AB /* Info.plist */,
 				ABA9F5491F9658D700FA149E /* ViewController.xib */,
@@ -130,8 +122,9 @@
 		AB4F61E81F7D51C8004224AB /* SideProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				AB73330E1F9E821100D67701 /* ViewControllers */,
+				AB73330F1F9E821800D67701 /* Services */,
 				AB4F61EB1F7D51C8004224AB /* Info.plist */,
-				AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */,
 			);
 			path = SideProjectTests;
 			sourceTree = "<group>";
@@ -148,10 +141,51 @@
 		AB4F62091F7D544C004224AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABDE877E1F7D55C0005B20F0 /* Nimble.framework */,
-				ABDE877D1F7D55C0005B20F0 /* Quick.framework */,
+				AB7333191F9E883F00D67701 /* Nimble.framework */,
+				AB73331A1F9E883F00D67701 /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB7333071F9E784000D67701 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB73331D1F9E897700D67701 /* Event.swift */,
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AB73330A1F9E81BA00D67701 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB73330C1F9E81F900D67701 /* EventService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB73330B1F9E81E400D67701 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F61D61F7D51C8004224AB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB73330E1F9E821100D67701 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB73330F1F9E821800D67701 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB7333101F9E824B00D67701 /* EventServiceSpec.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +215,7 @@
 				AB4F61E11F7D51C8004224AB /* Sources */,
 				AB4F61E21F7D51C8004224AB /* Frameworks */,
 				AB4F61E31F7D51C8004224AB /* Resources */,
-				AB4F62041F7D53E0004224AB /* CopyFiles */,
+				AB7333181F9E86E900D67701 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,11 +318,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB7333181F9E86E900D67701 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB4F61CD1F7D51C8004224AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB73331E1F9E897700D67701 /* Event.swift in Sources */,
+				AB73330D1F9E81F900D67701 /* EventService.swift in Sources */,
 				AB4F61D71F7D51C8004224AB /* ViewController.swift in Sources */,
 				AB4F61D51F7D51C8004224AB /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4F62031F7D51EA004224AB /* ViewControllerSpec.swift in Sources */,
+				AB7333111F9E824B00D67701 /* EventServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +523,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SideProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProjectTests;
@@ -486,6 +545,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SideProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProjectTests;
