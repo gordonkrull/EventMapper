@@ -10,25 +10,17 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     var locationManager: CLLocationManager!
     var eventService: EventService!
     var events: [Event]!
     
     @IBOutlet var mapView: MKMapView!
     
-    init(_ eventService: EventService) {
-        super.init(nibName: String(describing: ViewController.self), bundle: Bundle.main)
-        self.eventService = eventService
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.startStandardUpdates()
+        self.fetchEvents()
         self.setupMap()
         self.seedData()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +34,10 @@ class ViewController: UIViewController {
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+    }
+    
+    func fetchEvents() {
+        self.events = self.eventService.getEvents()
     }
     
     func setupMap() {
@@ -62,7 +58,8 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: CLLocationManagerDelegate {
+// MARK: - CLLocationManagerDelegate
+extension MapViewController: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             let span = MKCoordinateSpanMake(0.05, 0.05)
@@ -74,8 +71,9 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("ERRROR-------------\n " + String(describing: error))
     }
-}
+}   
 
-extension ViewController: MKMapViewDelegate {
+// MARK: - MKMapViewDelegate
+extension MapViewController: MKMapViewDelegate {
 }
 

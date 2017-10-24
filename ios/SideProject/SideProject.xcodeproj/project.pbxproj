@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		AB4F61D51F7D51C8004224AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D41F7D51C8004224AB /* AppDelegate.swift */; };
-		AB4F61D71F7D51C8004224AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D61F7D51C8004224AB /* ViewController.swift */; };
+		AB4F61D71F7D51C8004224AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D61F7D51C8004224AB /* MapViewController.swift */; };
 		AB4F61DC1F7D51C8004224AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F61DB1F7D51C8004224AB /* Assets.xcassets */; };
 		AB4F61F51F7D51C8004224AB /* SideProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */; };
-		AB4F62031F7D51EA004224AB /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */; };
+		AB4F62031F7D51EA004224AB /* MapViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F62021F7D51EA004224AB /* MapViewControllerSpec.swift */; };
 		AB73330D1F9E81F900D67701 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73330C1F9E81F900D67701 /* EventService.swift */; };
 		AB7333111F9E824B00D67701 /* EventServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7333101F9E824B00D67701 /* EventServiceSpec.swift */; };
 		AB73331B1F9E884000D67701 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7333191F9E883F00D67701 /* Nimble.framework */; };
 		AB73331C1F9E884000D67701 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73331A1F9E883F00D67701 /* Quick.framework */; };
 		AB73331E1F9E897700D67701 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331D1F9E897700D67701 /* Event.swift */; };
 		AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331F1F9E8FE700D67701 /* HttpService.swift */; };
-		ABA9F54A1F9658D700FA149E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA9F5491F9658D700FA149E /* ViewController.xib */; };
 		ABC371491F9F8C2E00A5D8E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */; };
+		ABC3714C1F9F924200A5D8E7 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */; };
+		ABC3714F1F9F930F00A5D8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 /* Begin PBXFileReference section */
 		AB4F61D11F7D51C8004224AB /* SideProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4F61D41F7D51C8004224AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB4F61D61F7D51C8004224AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB4F61D61F7D51C8004224AB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AB4F61DB1F7D51C8004224AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4F61E01F7D51C8004224AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4F61E51F7D51C8004224AB /* SideProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,15 +51,16 @@
 		AB4F61F01F7D51C8004224AB /* SideProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectUITests.swift; sourceTree = "<group>"; };
 		AB4F61F61F7D51C8004224AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		AB4F62021F7D51EA004224AB /* MapViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerSpec.swift; sourceTree = "<group>"; };
 		AB73330C1F9E81F900D67701 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		AB7333101F9E824B00D67701 /* EventServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceSpec.swift; sourceTree = "<group>"; };
 		AB7333191F9E883F00D67701 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AB73331A1F9E883F00D67701 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SideProject/Models/Event.swift; sourceTree = SOURCE_ROOT; };
 		AB73331F1F9E8FE700D67701 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
-		ABA9F5491F9658D700FA149E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +115,13 @@
 		AB4F61D31F7D51C8004224AB /* SideProject */ = {
 			isa = PBXGroup;
 			children = (
+				ABC3714D1F9F930300A5D8E7 /* Storyboards */,
 				AB73330B1F9E81E400D67701 /* ViewControllers */,
 				AB73330A1F9E81BA00D67701 /* Services */,
 				AB7333071F9E784000D67701 /* Models */,
 				AB4F61D41F7D51C8004224AB /* AppDelegate.swift */,
 				AB4F61DB1F7D51C8004224AB /* Assets.xcassets */,
 				AB4F61E01F7D51C8004224AB /* Info.plist */,
-				ABA9F5491F9658D700FA149E /* ViewController.xib */,
 			);
 			path = SideProject;
 			sourceTree = "<group>";
@@ -173,7 +175,8 @@
 		AB73330B1F9E81E400D67701 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB4F61D61F7D51C8004224AB /* ViewController.swift */,
+				AB4F61D61F7D51C8004224AB /* MapViewController.swift */,
+				ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 		AB73330E1F9E821100D67701 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB4F62021F7D51EA004224AB /* ViewControllerSpec.swift */,
+				AB4F62021F7D51EA004224AB /* MapViewControllerSpec.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,14 @@
 				AB7333101F9E824B00D67701 /* EventServiceSpec.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		ABC3714D1F9F930300A5D8E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,8 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA9F54A1F9658D700FA149E /* ViewController.xib in Resources */,
 				AB4F61DC1F7D51C8004224AB /* Assets.xcassets in Resources */,
+				ABC3714F1F9F930F00A5D8E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +375,9 @@
 			files = (
 				AB73331E1F9E897700D67701 /* Event.swift in Sources */,
 				AB73330D1F9E81F900D67701 /* EventService.swift in Sources */,
-				AB4F61D71F7D51C8004224AB /* ViewController.swift in Sources */,
+				AB4F61D71F7D51C8004224AB /* MapViewController.swift in Sources */,
 				AB4F61D51F7D51C8004224AB /* AppDelegate.swift in Sources */,
+				ABC3714C1F9F924200A5D8E7 /* LocationSearchTableViewController.swift in Sources */,
 				AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4F62031F7D51EA004224AB /* ViewControllerSpec.swift in Sources */,
+				AB4F62031F7D51EA004224AB /* MapViewControllerSpec.swift in Sources */,
 				AB7333111F9E824B00D67701 /* EventServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

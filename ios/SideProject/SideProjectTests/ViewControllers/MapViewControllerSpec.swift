@@ -20,15 +20,15 @@ fileprivate class EventServiceStub: EventService {
     }
 }
 
-class ViewControllerSpec: QuickSpec {
+class MapViewControllerSpec: QuickSpec {
     override func spec() {
-        describe("ViewControllerSpec") {
-            var subject: ViewController!
+        describe("MapViewControllerSpec") {
+            var subject: MapViewController!
             var eventServiceStub: EventServiceStub!
             
             beforeEach {
                 eventServiceStub = EventServiceStub()
-                subject = ViewController(eventServiceStub)
+                subject = MapViewController(eventServiceStub)
             }
             
             context("viewDidLoad") {
@@ -44,6 +44,20 @@ class ViewControllerSpec: QuickSpec {
                     expect(subject.events).to(equal(eventServiceStub.stubbedEvents))
                 }
             }
+            
+            context("CLLocationManagerDelegate") {
+                beforeEach {
+                    let location = CLLocation()
+                    location.
+                    subject.locationManager(subject.locationManager, didUpdateLocations: <#T##[CLLocation]#>)
+                }
+            }
+
+            context("MKMapViewDelegate") {
+                
+            }
+
+            
         }
     }
 }
