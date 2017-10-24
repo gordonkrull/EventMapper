@@ -18,10 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        if let initialViewController = storyboard.instantiateInitialViewController() as? MapViewController {
+        let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
+        if let initialViewController = navigationController?.topViewController as? MapViewController {
             initialViewController.eventService = RealEventService()
-            window?.rootViewController = initialViewController
         }
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
         return true

@@ -11,3 +11,9 @@ import UIKit
 class LocationSearchTableViewController: UITableViewController {
     
 }
+
+extension LocationSearchTableViewController : UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        //TODO: implement this
+    }
+}

@@ -12,18 +12,21 @@ import CoreLocation
 
 class MapViewController: UIViewController {
     var locationManager: CLLocationManager!
+    var searchResultsController: UISearchController? = nil
     var eventService: EventService!
     var events: [Event]!
     
     @IBOutlet var mapView: MKMapView!
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.startStandardUpdates()
         self.fetchEvents()
         self.setupMap()
         self.seedData()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.setupSearchResultsController()
+        self.setupSearchBar()
     }
     
     func startStandardUpdates() {
@@ -40,13 +43,14 @@ class MapViewController: UIViewController {
         self.events = self.eventService.getEvents()
     }
     
-    func setupMap() {
+    // MARK: - Private
+    private func setupMap() {
         mapView.showsUserLocation = true
         mapView.showsPointsOfInterest = true
         mapView.delegate = self
     }
     
-    func seedData() {
+    private func seedData() {
         let event = Event(coordinate: CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093),
                           title: "TITLE",
                           subtitle: "SUBTITLE")
@@ -55,6 +59,22 @@ class MapViewController: UIViewController {
         annotation1.title = event.title
         annotation1.subtitle = event.subtitle
         mapView.addAnnotation(annotation1)
+    }
+    
+    private func setupSearchResultsController() {
+        let locationSearchTableVC = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTableViewController") as! LocationSearchTableViewController
+        self.searchResultsController = UISearchController(searchResultsController: locationSearchTableVC)
+        self.searchResultsController?.searchResultsUpdater = locationSearchTableVC
+        self.searchResultsController?.hidesNavigationBarDuringPresentation = false
+        self.searchResultsController?.dimsBackgroundDuringPresentation = true
+        self.definesPresentationContext = true
+    }
+    
+    private func setupSearchBar() {
+        let searchBar = searchResultsController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = searchResultsController?.searchBar
     }
 }
 
