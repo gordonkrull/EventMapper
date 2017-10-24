@@ -13,7 +13,7 @@ import CoreLocation
 @testable import SideProject
 
 fileprivate class EventServiceStub: EventService {
-    var stubbedEvents: [Event]!
+    var stubbedEvents: [Event] = []
     
     func getEvents() -> [Event] {
         return stubbedEvents
@@ -27,8 +27,12 @@ class MapViewControllerSpec: QuickSpec {
             var eventServiceStub: EventServiceStub!
             
             beforeEach {
+                let storyboard = UIStoryboard(name: "Main",
+                                              bundle: Bundle.main)
+                subject = storyboard.instantiateInitialViewController() as! MapViewController
                 eventServiceStub = EventServiceStub()
-                subject = MapViewController(eventServiceStub)
+                subject.eventService = eventServiceStub
+                UIApplication.shared.keyWindow!.rootViewController = subject
             }
             
             context("viewDidLoad") {
@@ -48,8 +52,7 @@ class MapViewControllerSpec: QuickSpec {
             context("CLLocationManagerDelegate") {
                 beforeEach {
                     let location = CLLocation()
-                    location.
-                    subject.locationManager(subject.locationManager, didUpdateLocations: <#T##[CLLocation]#>)
+                    subject.locationManager(subject.locationManager, didUpdateLocations: [location])
                 }
             }
 
