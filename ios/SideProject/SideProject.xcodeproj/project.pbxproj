@@ -19,6 +19,7 @@
 		AB73331E1F9E897700D67701 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331D1F9E897700D67701 /* Event.swift */; };
 		AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331F1F9E8FE700D67701 /* HttpService.swift */; };
 		ABA9F54A1F9658D700FA149E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA9F5491F9658D700FA149E /* ViewController.xib */; };
+		ABC371491F9F8C2E00A5D8E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SideProject/Models/Event.swift; sourceTree = SOURCE_ROOT; };
 		AB73331F1F9E8FE700D67701 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		ABA9F5491F9658D700FA149E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC371491F9F8C2E00A5D8E7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +146,7 @@
 		AB4F62091F7D544C004224AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */,
 				AB7333191F9E883F00D67701 /* Nimble.framework */,
 				AB73331A1F9E883F00D67701 /* Quick.framework */,
 			);
@@ -200,6 +204,7 @@
 				AB4F61CD1F7D51C8004224AB /* Sources */,
 				AB4F61CE1F7D51C8004224AB /* Frameworks */,
 				AB4F61CF1F7D51C8004224AB /* Resources */,
+				ABC3714A1F9F8C3300A5D8E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -329,6 +334,20 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		ABC3714A1F9F8C3300A5D8E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 			);
@@ -496,6 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SideProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProject;
@@ -510,6 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SideProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProject;
