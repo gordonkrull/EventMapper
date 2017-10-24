@@ -63,6 +63,7 @@ class MapViewController: UIViewController {
     
     private func setupSearchResultsController() {
         let locationSearchTableVC = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTableViewController") as! LocationSearchTableViewController
+        locationSearchTableVC.mapView = self.mapView
         self.searchResultsController = UISearchController(searchResultsController: locationSearchTableVC)
         self.searchResultsController?.searchResultsUpdater = locationSearchTableVC
         self.searchResultsController?.hidesNavigationBarDuringPresentation = false
