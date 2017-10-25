@@ -6,13 +6,11 @@
 //  Copyright © 2017 GK. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 protocol HttpService {
-    
 }
 
 class RealHttpService: HttpService {
-    
 }

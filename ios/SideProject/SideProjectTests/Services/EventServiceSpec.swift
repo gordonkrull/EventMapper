@@ -12,7 +12,6 @@ import Quick
 @testable import SideProject
 
 fileprivate class HttpServiceStub: HttpService {
-    
 }
 
 class EventServiceSpec: QuickSpec {
@@ -22,8 +21,6 @@ class EventServiceSpec: QuickSpec {
             beforeEach {
                 subject = RealEventService()
             }
-            
         }
     }
 }
-

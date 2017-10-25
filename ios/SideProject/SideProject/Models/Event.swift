@@ -6,14 +6,14 @@
 //  Copyright © 2017 GK. All rights reserved.
 //
 
-import Foundation
 import CoreLocation
+import Foundation
 
-struct Event {
+struct Event: Codable {
     var coordinate: CLLocationCoordinate2D
     var title: String
     var subtitle: String
-    
+
     init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
         self.coordinate = coordinate
         self.title = title
@@ -22,11 +22,10 @@ struct Event {
 }
 
 extension Event: Equatable {
-    public static func ==(lhs: Event, rhs: Event) -> Bool {
+    public static func == (lhs: Event, rhs: Event) -> Bool {
         return lhs.coordinate.latitude == rhs.coordinate.latitude &&
             lhs.coordinate.longitude == rhs.coordinate.longitude &&
             lhs.title == rhs.title &&
             lhs.subtitle == rhs.subtitle
     }
 }
-
