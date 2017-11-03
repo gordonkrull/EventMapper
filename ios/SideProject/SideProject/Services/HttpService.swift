@@ -10,7 +10,15 @@ import Alamofire
 import Foundation
 
 protocol HttpService {
+    func get(path: String, completionHandler: @escaping (Data?, Error?) -> ())
 }
 
 class RealHttpService: HttpService {
+    let baseUrl = "https://eventmapper.cfapps.io"
+
+    func get(path: String, completionHandler: @escaping (Data?, Error?) -> ()) {
+        Alamofire.request(baseUrl + path).responseData { response in
+           completionHandler(response.data, nil)
+        }
+    }
 }

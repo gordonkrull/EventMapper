@@ -18,19 +18,18 @@ class MapViewController: UIViewController {
     var locationManager: CLLocationManager!
     var searchResultsController: UISearchController?
     var eventService: EventService!
-    var events: [Event]!
     var selectedPin: MKPlacemark?
     @IBOutlet private var mapView: MKMapView!
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.startStandardUpdates()
-        self.fetchEvents()
-        self.setupMap()
-        self.seedData()
-        self.setupSearchResultsController()
-        self.setupSearchBar()
+        startStandardUpdates()
+        fetchEvents()
+        setupMap()
+        seedData()
+        setupSearchResultsController()
+        setupSearchBar()
     }
 
     func startStandardUpdates() {
@@ -44,7 +43,7 @@ class MapViewController: UIViewController {
     }
 
     func fetchEvents() {
-        self.events = self.eventService.getEvents()
+        eventService.getEvents()
     }
 
     // MARK: - Private

@@ -15,6 +15,6 @@ class EventsController {
 
     @GetMapping("/events")
     fun getEvents() : Event {
-        return Event(90.0, 90.0, "Test Event")
+        return Event(90.0, 90.0, "Test Event", "Test Subtitle")
     }
 }

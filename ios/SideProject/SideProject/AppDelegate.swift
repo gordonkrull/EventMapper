@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
         if let initialViewController = navigationController?.topViewController as? MapViewController {
-            initialViewController.eventService = RealEventService()
+            initialViewController.eventService = RealEventService(httpService: RealHttpService())
         }
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

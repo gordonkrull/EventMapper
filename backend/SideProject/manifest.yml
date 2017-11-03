@@ -1,4 +1,4 @@
 ---
 applications:
 - name: eventmapper
-path: /build/libs/eventmapper-0.1.0.jar
+path: build/libs/eventmapper-0.1.0.jar
