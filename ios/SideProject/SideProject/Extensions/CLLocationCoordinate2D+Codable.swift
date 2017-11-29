@@ -10,14 +10,19 @@ import CoreLocation
 
 extension CLLocationCoordinate2D: Codable {
     public func encode(to encoder: Encoder) throws {
-        var container = encoder.unkeyedContainer()
-        try container.encode(longitude)
-        try container.encode(latitude)
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(longitude, forKey: .longitude)
+        try container.encode(latitude, forKey: .latitude)
     }
 
     public init(from decoder: Decoder) throws {
-        var container = try decoder.unkeyedContainer()
-        longitude = try container.decode(Double.self)
-        latitude = try container.decode(Double.self)
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        longitude = try container.decode(Double.self, forKey: .longitude)
+        latitude = try container.decode(Double.self, forKey: .latitude)
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case longitude = "longitude"
+        case latitude = "latitude"
     }
 }
