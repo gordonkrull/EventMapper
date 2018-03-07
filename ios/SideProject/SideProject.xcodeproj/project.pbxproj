@@ -19,6 +19,7 @@
 		AB73331E1F9E897700D67701 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331D1F9E897700D67701 /* Event.swift */; };
 		AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331F1F9E8FE700D67701 /* HttpService.swift */; };
 		ABA52A571FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA52A561FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift */; };
+		ABC1D31A204FF297002BA74A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D319204FF297002BA74A /* AddEventViewController.swift */; };
 		ABC371491F9F8C2E00A5D8E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */; };
 		ABC3714C1F9F924200A5D8E7 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */; };
 		ABC3714F1F9F930F00A5D8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SideProject/Models/Event.swift; sourceTree = SOURCE_ROOT; };
 		AB73331F1F9E8FE700D67701 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		ABA52A561FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Codable.swift"; sourceTree = "<group>"; };
+		ABC1D319204FF297002BA74A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				AB4F61D61F7D51C8004224AB /* MapViewController.swift */,
+				ABC1D319204FF297002BA74A /* AddEventViewController.swift */,
 				ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -413,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB73331E1F9E897700D67701 /* Event.swift in Sources */,
+				ABC1D31A204FF297002BA74A /* AddEventViewController.swift in Sources */,
 				AB73330D1F9E81F900D67701 /* EventService.swift in Sources */,
 				ABA52A571FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift in Sources */,
 				AB4F61D71F7D51C8004224AB /* MapViewController.swift in Sources */,

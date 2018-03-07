@@ -65,12 +65,12 @@ class MapViewController: UIViewController {
     }
 
     private func setupSearchResultsController() {
-        if let locationSearchTableVC = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTableViewController")
+        if let locationSearchTableViewController = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTableViewController")
             as? LocationSearchTableViewController {
-            locationSearchTableVC.mapView = self.mapView
-            locationSearchTableVC.handleLocationSearchDelegate = self
-            self.searchResultsController = UISearchController(searchResultsController: locationSearchTableVC)
-            self.searchResultsController?.searchResultsUpdater = locationSearchTableVC
+            locationSearchTableViewController.mapView = self.mapView
+            locationSearchTableViewController.handleLocationSearchDelegate = self
+            self.searchResultsController = UISearchController(searchResultsController: locationSearchTableViewController)
+            self.searchResultsController?.searchResultsUpdater = locationSearchTableViewController
             self.searchResultsController?.hidesNavigationBarDuringPresentation = false
             self.searchResultsController?.dimsBackgroundDuringPresentation = true
             self.definesPresentationContext = true
@@ -102,6 +102,14 @@ extension MapViewController: CLLocationManagerDelegate {
 
 // MARK: - MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let addEventViewController = storyboard!.instantiateViewController(withIdentifier: "AddEventViewController")
+            as? AddEventViewController,
+            let coordinate = view.annotation?.coordinate {
+            addEventViewController.coordinate = coordinate
+            self.navigationController?.pushViewController(addEventViewController, animated: true)
+        }
+    }
 }
 
 // MARK: - HandleLocationSearch

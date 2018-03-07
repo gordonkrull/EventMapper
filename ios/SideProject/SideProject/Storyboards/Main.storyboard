@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XcX-X3-6gg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XcX-X3-6gg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -82,6 +82,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpG-D1-3km" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1460" y="-0.44977511244377816"/>
+        </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="WAu-ga-RaP">
+            <objects>
+                <viewController storyboardIdentifier="AddEventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rde-H9-w1d" customClass="AddEventViewController" customModule="SideProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0x-FX-hbi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whm-M9-Bb1">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <state key="normal" title="_Add Event"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Event Title: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-0k-wrQ">
+                                <rect key="frame" x="20" y="40" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Event Subtitle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIc-JP-oCx">
+                                <rect key="frame" x="20" y="111" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-Ma-JjG">
+                                <rect key="frame" x="147" y="37" width="208" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXw-3E-7X0">
+                                <rect key="frame" x="168" y="108" width="187" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D2d-of-RBe" firstAttribute="trailing" secondItem="9bG-Ma-JjG" secondAttribute="trailing" constant="20" id="3cF-N4-BuV"/>
+                            <constraint firstItem="YZS-0k-wrQ" firstAttribute="top" secondItem="D2d-of-RBe" secondAttribute="top" constant="20" id="5fe-U1-04V"/>
+                            <constraint firstItem="9bG-Ma-JjG" firstAttribute="baseline" secondItem="YZS-0k-wrQ" secondAttribute="baseline" id="6Cb-md-uLp"/>
+                            <constraint firstItem="dXw-3E-7X0" firstAttribute="baseline" secondItem="dIc-JP-oCx" secondAttribute="baseline" id="EH0-oe-VXP"/>
+                            <constraint firstItem="9bG-Ma-JjG" firstAttribute="leading" secondItem="YZS-0k-wrQ" secondAttribute="trailing" constant="30" id="G0Y-nB-hNZ"/>
+                            <constraint firstItem="dIc-JP-oCx" firstAttribute="leading" secondItem="D2d-of-RBe" secondAttribute="leading" constant="20" id="Jvy-Bi-tDI"/>
+                            <constraint firstItem="whm-M9-Bb1" firstAttribute="leading" secondItem="D2d-of-RBe" secondAttribute="leading" constant="20" id="SgV-3W-VgO"/>
+                            <constraint firstItem="YZS-0k-wrQ" firstAttribute="leading" secondItem="D2d-of-RBe" secondAttribute="leading" constant="20" id="e3R-A6-f6Y"/>
+                            <constraint firstItem="D2d-of-RBe" firstAttribute="bottom" secondItem="whm-M9-Bb1" secondAttribute="bottom" constant="20" id="hQw-Xd-R1w"/>
+                            <constraint firstItem="dIc-JP-oCx" firstAttribute="top" secondItem="YZS-0k-wrQ" secondAttribute="bottom" constant="50" id="kF7-BO-R8a"/>
+                            <constraint firstItem="D2d-of-RBe" firstAttribute="trailing" secondItem="whm-M9-Bb1" secondAttribute="trailing" constant="20" id="oFv-ym-NxU"/>
+                            <constraint firstItem="dXw-3E-7X0" firstAttribute="leading" secondItem="dIc-JP-oCx" secondAttribute="trailing" constant="30" id="s1f-SE-lGk"/>
+                            <constraint firstItem="D2d-of-RBe" firstAttribute="trailing" secondItem="dXw-3E-7X0" secondAttribute="trailing" constant="20" id="sIq-Zk-yVp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D2d-of-RBe"/>
+                    </view>
+                    <connections>
+                        <outlet property="addEventButton" destination="whm-M9-Bb1" id="aoC-GX-emn"/>
+                        <outlet property="subtitleLabel" destination="dIc-JP-oCx" id="FXM-VX-R0y"/>
+                        <outlet property="subtitleTextField" destination="dXw-3E-7X0" id="3N7-is-flL"/>
+                        <outlet property="titleLabel" destination="YZS-0k-wrQ" id="1Es-ZW-g3v"/>
+                        <outlet property="titleTextField" destination="9bG-Ma-JjG" id="vEV-IN-0xk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zM-M8-kJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="734"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cDk-qT-1g1">
