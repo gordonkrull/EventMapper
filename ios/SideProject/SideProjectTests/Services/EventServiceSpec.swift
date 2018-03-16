@@ -12,6 +12,10 @@ import Quick
 @testable import SideProject
 
 fileprivate class HttpServiceStub: HttpService {
+    func get(path: String, completionHandler: @escaping (Data?, Error?) -> ()) {
+        
+    }
+    
 }
 
 class EventServiceSpec: QuickSpec {

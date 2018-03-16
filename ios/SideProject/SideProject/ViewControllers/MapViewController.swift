@@ -9,6 +9,7 @@
 import CoreLocation
 import MapKit
 import UIKit
+import RxSwift
 
 protocol HandleLocationSearch {
     func dropPinAndZoom(placemark: MKPlacemark)
@@ -19,20 +20,38 @@ class MapViewController: UIViewController {
     var searchResultsController: UISearchController?
     var eventService: EventService!
     var selectedPin: MKPlacemark?
+    
+    let disposeBag = DisposeBag()
+    
     @IBOutlet private var mapView: MKMapView!
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupObservables()
         startStandardUpdates()
         fetchEvents()
         setupMap()
-        seedData()
         setupSearchResultsController()
         setupSearchBar()
     }
+    
+    private func setupObservables() {
+        eventService.events
+            .asObservable()
+            .subscribe(onNext: {
+                events in
+                events.forEach { event in
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = event.coordinate
+                    annotation.title = event.title
+                    annotation.subtitle = event.subtitle
+                    self.mapView.addAnnotation(annotation)
+                }
+            }).disposed(by: disposeBag)
+    }
 
-    func startStandardUpdates() {
+    private func startStandardUpdates() {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
             locationManager.delegate = self
@@ -42,7 +61,7 @@ class MapViewController: UIViewController {
         }
     }
 
-    func fetchEvents() {
+    private func fetchEvents() {
         eventService.getEvents()
     }
 
@@ -51,17 +70,6 @@ class MapViewController: UIViewController {
         mapView.showsUserLocation = true
         mapView.showsPointsOfInterest = true
         mapView.delegate = self
-    }
-
-    private func seedData() {
-        let event = Event(coordinate: CLLocationCoordinate2D(latitude: -33.8688, longitude: 151.2093),
-                          title: "TITLE",
-                          subtitle: "SUBTITLE")
-        let annotation1 = MKPointAnnotation()
-        annotation1.coordinate = event.coordinate
-        annotation1.title = event.title
-        annotation1.subtitle = event.subtitle
-        mapView.addAnnotation(annotation1)
     }
 
     private func setupSearchResultsController() {

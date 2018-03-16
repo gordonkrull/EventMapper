@@ -7,14 +7,16 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol EventService {
     func getEvents()
+    var events: PublishSubject<[Event]> { get }
 }
 
 class RealEventService: EventService {
     var httpService: HttpService!
-    var events: [Event] = []
+    var events: PublishSubject<[Event]> = PublishSubject()
     
     func getEvents() {
         httpService.get(path: "/api/events") { data, error in
@@ -22,7 +24,7 @@ class RealEventService: EventService {
             if let data = data {
                 do {
                     let event = try decoder.decode(Event.self, from: data)
-                    self.events = [event]
+                    self.events.onNext([event])
                 } catch let decodeError {
                     print(decodeError)
                 }
