@@ -17,7 +17,7 @@ class EventsController {
     @GetMapping("/events")
     fun getEvents() : Event {
         return Event(
-                Coordinate(90.0, 90.0),
+                Coordinate(37.7577627, -122.4726194),
                 "Test Event",
                 "Test Subtitle"
         )
