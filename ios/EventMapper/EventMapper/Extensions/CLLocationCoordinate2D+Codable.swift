@@ -16,11 +16,12 @@ extension CLLocationCoordinate2D: Codable {
     }
 
     public init(from decoder: Decoder) throws {
+        self.init()
         let container = try decoder.container(keyedBy: CodingKeys.self)
         longitude = try container.decode(Double.self, forKey: .longitude)
         latitude = try container.decode(Double.self, forKey: .latitude)
     }
-    
+
     enum CodingKeys: String, CodingKey {
         case longitude = "longitude"
         case latitude = "latitude"

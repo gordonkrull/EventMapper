@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D9BEBFEA4D81BC57D82FE3 /* Pods_EventMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67244A5EA4DFEFE99445B78 /* Pods_EventMapper.framework */; };
+		4607E054D9DF40F23F67E006 /* Pods_EventMapper_EventMapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C3A22BC94EBEF9300D5F21 /* Pods_EventMapper_EventMapperUITests.framework */; };
+		8DCF21609D3D2D46BDB26620 /* Pods_EventMapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC64FB01B6280C5EBF2D99F /* Pods_EventMapperTests.framework */; };
 		AB4F61D51F7D51C8004224AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D41F7D51C8004224AB /* AppDelegate.swift */; };
 		AB4F61D71F7D51C8004224AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D61F7D51C8004224AB /* MapViewController.swift */; };
 		AB4F61DC1F7D51C8004224AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F61DB1F7D51C8004224AB /* Assets.xcassets */; };
@@ -14,13 +17,10 @@
 		AB4F62031F7D51EA004224AB /* MapViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F62021F7D51EA004224AB /* MapViewControllerSpec.swift */; };
 		AB73330D1F9E81F900D67701 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73330C1F9E81F900D67701 /* EventService.swift */; };
 		AB7333111F9E824B00D67701 /* EventServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7333101F9E824B00D67701 /* EventServiceSpec.swift */; };
-		AB73331B1F9E884000D67701 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7333191F9E883F00D67701 /* Nimble.framework */; };
-		AB73331C1F9E884000D67701 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73331A1F9E883F00D67701 /* Quick.framework */; };
 		AB73331E1F9E897700D67701 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331D1F9E897700D67701 /* Event.swift */; };
 		AB7333201F9E8FE700D67701 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73331F1F9E8FE700D67701 /* HttpService.swift */; };
 		ABA52A571FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA52A561FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift */; };
 		ABC1D31A204FF297002BA74A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D319204FF297002BA74A /* AddEventViewController.swift */; };
-		ABC371491F9F8C2E00A5D8E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */; };
 		ABC3714C1F9F924200A5D8E7 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */; };
 		ABC3714F1F9F930F00A5D8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -43,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D3D660A96FE08721809677E /* Pods-EventMapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMapperTests.debug.xcconfig"; path = "Target Support Files/Pods-EventMapperTests/Pods-EventMapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D48F3E13B2F0AEAF9F32433 /* Pods-EventMapper-EventMapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMapper-EventMapperUITests.release.xcconfig"; path = "Target Support Files/Pods-EventMapper-EventMapperUITests/Pods-EventMapper-EventMapperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5CC64FB01B6280C5EBF2D99F /* Pods_EventMapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C3A22BC94EBEF9300D5F21 /* Pods_EventMapper_EventMapperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMapper_EventMapperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B169AF65E3BD8DEA730C99B /* Pods-EventMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMapper.release.xcconfig"; path = "Target Support Files/Pods-EventMapper/Pods-EventMapper.release.xcconfig"; sourceTree = "<group>"; };
 		AB4F61D11F7D51C8004224AB /* EventMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4F61D41F7D51C8004224AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4F61D61F7D51C8004224AB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +70,10 @@
 		ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		ABC3714B1F9F924200A5D8E7 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		ABC3714E1F9F930F00A5D8E7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C863A1ECEDF0955708CFE9E4 /* Pods-EventMapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMapperTests.release.xcconfig"; path = "Target Support Files/Pods-EventMapperTests/Pods-EventMapperTests.release.xcconfig"; sourceTree = "<group>"; };
+		E67244A5EA4DFEFE99445B78 /* Pods_EventMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBBA566F4B08FAAA1A0BDA3 /* Pods-EventMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMapper.debug.xcconfig"; path = "Target Support Files/Pods-EventMapper/Pods-EventMapper.debug.xcconfig"; sourceTree = "<group>"; };
+		F2895D4AA58A38DF0C3F74EF /* Pods-EventMapper-EventMapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMapper-EventMapperUITests.debug.xcconfig"; path = "Target Support Files/Pods-EventMapper-EventMapperUITests/Pods-EventMapper-EventMapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC371491F9F8C2E00A5D8E7 /* Alamofire.framework in Frameworks */,
+				16D9BEBFEA4D81BC57D82FE3 /* Pods_EventMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB73331B1F9E884000D67701 /* Nimble.framework in Frameworks */,
-				AB73331C1F9E884000D67701 /* Quick.framework in Frameworks */,
+				8DCF21609D3D2D46BDB26620 /* Pods_EventMapperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4607E054D9DF40F23F67E006 /* Pods_EventMapper_EventMapperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +112,7 @@
 				AB4F61F31F7D51C8004224AB /* EventMapperUITests */,
 				AB4F61D21F7D51C8004224AB /* Products */,
 				AB4F62091F7D544C004224AB /* Frameworks */,
+				AC0EC33CD19C1E2E37F5D6B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +166,9 @@
 				ABC371481F9F8C2E00A5D8E7 /* Alamofire.framework */,
 				AB7333191F9E883F00D67701 /* Nimble.framework */,
 				AB73331A1F9E883F00D67701 /* Quick.framework */,
+				E67244A5EA4DFEFE99445B78 /* Pods_EventMapper.framework */,
+				64C3A22BC94EBEF9300D5F21 /* Pods_EventMapper_EventMapperUITests.framework */,
+				5CC64FB01B6280C5EBF2D99F /* Pods_EventMapperTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,6 +232,19 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		AC0EC33CD19C1E2E37F5D6B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEBBA566F4B08FAAA1A0BDA3 /* Pods-EventMapper.debug.xcconfig */,
+				6B169AF65E3BD8DEA730C99B /* Pods-EventMapper.release.xcconfig */,
+				F2895D4AA58A38DF0C3F74EF /* Pods-EventMapper-EventMapperUITests.debug.xcconfig */,
+				4D48F3E13B2F0AEAF9F32433 /* Pods-EventMapper-EventMapperUITests.release.xcconfig */,
+				4D3D660A96FE08721809677E /* Pods-EventMapperTests.debug.xcconfig */,
+				C863A1ECEDF0955708CFE9E4 /* Pods-EventMapperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,11 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB4F61F91F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapper" */;
 			buildPhases = (
+				7EB87799364961B0DAF4BBA4 /* [CP] Check Pods Manifest.lock */,
 				AB4F61CD1F7D51C8004224AB /* Sources */,
 				AB4F61CE1F7D51C8004224AB /* Frameworks */,
 				AB4F61CF1F7D51C8004224AB /* Resources */,
-				ABC3714A1F9F8C3300A5D8E7 /* ShellScript */,
-				ABA52A581FA0E3A300588FC8 /* ShellScript */,
+				359DB7CC3CCA9F55E218FB98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,11 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB4F61FC1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapperTests" */;
 			buildPhases = (
+				C6DE5F6108E935C1DF18123D /* [CP] Check Pods Manifest.lock */,
 				AB4F61E11F7D51C8004224AB /* Sources */,
 				AB4F61E21F7D51C8004224AB /* Frameworks */,
 				AB4F61E31F7D51C8004224AB /* Resources */,
-				AB7333181F9E86E900D67701 /* ShellScript */,
 				ABA52A591FA0E3E500588FC8 /* ShellScript */,
+				C86E7687C4C76809CF6A8021 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB4F61FF1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapperUITests" */;
 			buildPhases = (
+				66531ABA144A529AF9659310 /* [CP] Check Pods Manifest.lock */,
 				AB4F61EC1F7D51C8004224AB /* Sources */,
 				AB4F61ED1F7D51C8004224AB /* Frameworks */,
 				AB4F61EE1F7D51C8004224AB /* Resources */,
+				46E3256EFBFAC2E1B2AE9824 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,7 +315,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = GK;
 				TargetAttributes = {
 					AB4F61D01F7D51C8004224AB = {
@@ -353,33 +382,89 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AB7333181F9E86E900D67701 /* ShellScript */ = {
+		359DB7CC3CCA9F55E218FB98 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-EventMapper/Pods-EventMapper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMapper/Pods-EventMapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		ABA52A581FA0E3A300588FC8 /* ShellScript */ = {
+		46E3256EFBFAC2E1B2AE9824 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMapper-EventMapperUITests/Pods-EventMapper-EventMapperUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMapper-EventMapperUITests/Pods-EventMapper-EventMapperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66531ABA144A529AF9659310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventMapper-EventMapperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EB87799364961B0DAF4BBA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventMapper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		ABA52A591FA0E3E500588FC8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -392,22 +477,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		ABC3714A1F9F8C3300A5D8E7 /* ShellScript */ = {
+		C6DE5F6108E935C1DF18123D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventMapperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86E7687C4C76809CF6A8021 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-EventMapperTests/Pods-EventMapperTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMapperTests/Pods-EventMapperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -474,6 +586,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -481,6 +594,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -514,6 +628,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -531,6 +646,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -538,6 +654,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -563,63 +680,58 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		AB4F61FA1F7D51C8004224AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEBBA566F4B08FAAA1A0BDA3 /* Pods-EventMapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EventMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapper;
 				PRODUCT_NAME = EventMapper;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AB4F61FB1F7D51C8004224AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B169AF65E3BD8DEA730C99B /* Pods-EventMapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EventMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapper;
 				PRODUCT_NAME = EventMapper;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		AB4F61FD1F7D51C8004224AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3D660A96FE08721809677E /* Pods-EventMapperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EventMapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventMapper.app/EventMapper";
 			};
@@ -627,20 +739,18 @@
 		};
 		AB4F61FE1F7D51C8004224AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C863A1ECEDF0955708CFE9E4 /* Pods-EventMapperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EventMapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventMapper.app/EventMapper";
 			};
@@ -648,6 +758,7 @@
 		};
 		AB4F62001F7D51C8004224AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2895D4AA58A38DF0C3F74EF /* Pods-EventMapper-EventMapperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,7 +766,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EventMapper;
 			};
@@ -663,6 +774,7 @@
 		};
 		AB4F62011F7D51C8004224AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D48F3E13B2F0AEAF9F32433 /* Pods-EventMapper-EventMapperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -670,7 +782,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EventMapper;
 			};

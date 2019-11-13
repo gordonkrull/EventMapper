@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Nimble (8.0.4)
+  - Quick (2.2.0)
+  - RxSwift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Nimble
+  - Quick
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Nimble
+    - Quick
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+
+PODFILE CHECKSUM: 9368fd4c1b50448a38789ebb51066c8a634b4e1c
+
+COCOAPODS: 1.8.4
