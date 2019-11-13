@@ -1,6 +1,6 @@
 //
-//  SideProjectUITests.swift
-//  SideProjectUITests
+//  EventMapperUITests.swift
+//  EventMapperUITests
 //
 //  Created by Gordon Krull on 2017-09-28.
 //  Copyright © 2017 GK. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class SideProjectUITests: XCTestCase {
+class EventMapperUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

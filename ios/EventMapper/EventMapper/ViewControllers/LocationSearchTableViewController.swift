@@ -1,6 +1,6 @@
 //
 //  LocationSearchTableViewController.swift
-//  SideProject
+//  EventMapper
 //
 //  Created by Gordon Krull on 2017-10-24.
 //  Copyright © 2017 GK. All rights reserved.

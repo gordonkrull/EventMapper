@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SideProject.xcodeproj">
+      location = "self:/Users/pivotal/workspace/EventMapper/ios/EventMapper/EventMapper.xcodeproj">
    </FileRef>
 </Workspace>

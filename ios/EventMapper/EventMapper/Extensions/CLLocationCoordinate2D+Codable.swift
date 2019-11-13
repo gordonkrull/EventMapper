@@ -1,6 +1,6 @@
 //
 //  CLLocationCoordinate2D+Codable.swift
-//  SideProject
+//  EventMapper
 //
 //  Created by Gordon Krull on 2017-10-25.
 //  Copyright © 2017 GK. All rights reserved.

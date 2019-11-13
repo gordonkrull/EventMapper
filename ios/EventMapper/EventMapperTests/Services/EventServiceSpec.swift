@@ -1,6 +1,6 @@
 //
 //  EventServiceSpec.swift
-//  SideProjectTests
+//  EventMapperTests
 //
 //  Created by Gordon Krull on 2017-10-23.
 //  Copyright © 2017 GK. All rights reserved.
@@ -9,7 +9,7 @@
 import Nimble
 import Quick
 
-@testable import SideProject
+@testable import EventMapper
 
 fileprivate class HttpServiceStub: HttpService {
     func get(path: String, completionHandler: @escaping (Data?, Error?) -> ()) {

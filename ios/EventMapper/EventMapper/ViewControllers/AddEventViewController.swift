@@ -1,6 +1,6 @@
 //
 //  AddEventViewController.swift
-//  SideProject
+//  EventMapper
 //
 //  Created by Gordon Krull on 2018-03-07.
 //  Copyright © 2018 GK. All rights reserved.

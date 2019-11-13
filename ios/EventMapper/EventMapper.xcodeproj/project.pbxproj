@@ -10,7 +10,7 @@
 		AB4F61D51F7D51C8004224AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D41F7D51C8004224AB /* AppDelegate.swift */; };
 		AB4F61D71F7D51C8004224AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61D61F7D51C8004224AB /* MapViewController.swift */; };
 		AB4F61DC1F7D51C8004224AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F61DB1F7D51C8004224AB /* Assets.xcassets */; };
-		AB4F61F51F7D51C8004224AB /* SideProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */; };
+		AB4F61F51F7D51C8004224AB /* EventMapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F61F41F7D51C8004224AB /* EventMapperUITests.swift */; };
 		AB4F62031F7D51EA004224AB /* MapViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F62021F7D51EA004224AB /* MapViewControllerSpec.swift */; };
 		AB73330D1F9E81F900D67701 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73330C1F9E81F900D67701 /* EventService.swift */; };
 		AB7333111F9E824B00D67701 /* EventServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7333101F9E824B00D67701 /* EventServiceSpec.swift */; };
@@ -43,22 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB4F61D11F7D51C8004224AB /* SideProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4F61D11F7D51C8004224AB /* EventMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4F61D41F7D51C8004224AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4F61D61F7D51C8004224AB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AB4F61DB1F7D51C8004224AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4F61E01F7D51C8004224AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB4F61E51F7D51C8004224AB /* SideProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4F61E51F7D51C8004224AB /* EventMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4F61EB1F7D51C8004224AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB4F61F01F7D51C8004224AB /* SideProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectUITests.swift; sourceTree = "<group>"; };
+		AB4F61F01F7D51C8004224AB /* EventMapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventMapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4F61F41F7D51C8004224AB /* EventMapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapperUITests.swift; sourceTree = "<group>"; };
 		AB4F61F61F7D51C8004224AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4F62021F7D51EA004224AB /* MapViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerSpec.swift; sourceTree = "<group>"; };
 		AB73330C1F9E81F900D67701 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		AB7333101F9E824B00D67701 /* EventServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceSpec.swift; sourceTree = "<group>"; };
 		AB7333191F9E883F00D67701 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AB73331A1F9E883F00D67701 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SideProject/Models/Event.swift; sourceTree = SOURCE_ROOT; };
+		AB73331D1F9E897700D67701 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = EventMapper/Models/Event.swift; sourceTree = SOURCE_ROOT; };
 		AB73331F1F9E8FE700D67701 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		ABA52A561FA0E1B100588FC8 /* CLLocationCoordinate2D+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Codable.swift"; sourceTree = "<group>"; };
 		ABC1D319204FF297002BA74A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -98,9 +98,9 @@
 		AB4F61C81F7D51C8004224AB = {
 			isa = PBXGroup;
 			children = (
-				AB4F61D31F7D51C8004224AB /* SideProject */,
-				AB4F61E81F7D51C8004224AB /* SideProjectTests */,
-				AB4F61F31F7D51C8004224AB /* SideProjectUITests */,
+				AB4F61D31F7D51C8004224AB /* EventMapper */,
+				AB4F61E81F7D51C8004224AB /* EventMapperTests */,
+				AB4F61F31F7D51C8004224AB /* EventMapperUITests */,
 				AB4F61D21F7D51C8004224AB /* Products */,
 				AB4F62091F7D544C004224AB /* Frameworks */,
 			);
@@ -109,14 +109,14 @@
 		AB4F61D21F7D51C8004224AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB4F61D11F7D51C8004224AB /* SideProject.app */,
-				AB4F61E51F7D51C8004224AB /* SideProjectTests.xctest */,
-				AB4F61F01F7D51C8004224AB /* SideProjectUITests.xctest */,
+				AB4F61D11F7D51C8004224AB /* EventMapper.app */,
+				AB4F61E51F7D51C8004224AB /* EventMapperTests.xctest */,
+				AB4F61F01F7D51C8004224AB /* EventMapperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB4F61D31F7D51C8004224AB /* SideProject */ = {
+		AB4F61D31F7D51C8004224AB /* EventMapper */ = {
 			isa = PBXGroup;
 			children = (
 				ABC3714D1F9F930300A5D8E7 /* Storyboards */,
@@ -128,26 +128,26 @@
 				AB4F61DB1F7D51C8004224AB /* Assets.xcassets */,
 				AB4F61E01F7D51C8004224AB /* Info.plist */,
 			);
-			path = SideProject;
+			path = EventMapper;
 			sourceTree = "<group>";
 		};
-		AB4F61E81F7D51C8004224AB /* SideProjectTests */ = {
+		AB4F61E81F7D51C8004224AB /* EventMapperTests */ = {
 			isa = PBXGroup;
 			children = (
 				AB73330E1F9E821100D67701 /* ViewControllers */,
 				AB73330F1F9E821800D67701 /* Services */,
 				AB4F61EB1F7D51C8004224AB /* Info.plist */,
 			);
-			path = SideProjectTests;
+			path = EventMapperTests;
 			sourceTree = "<group>";
 		};
-		AB4F61F31F7D51C8004224AB /* SideProjectUITests */ = {
+		AB4F61F31F7D51C8004224AB /* EventMapperUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AB4F61F41F7D51C8004224AB /* SideProjectUITests.swift */,
+				AB4F61F41F7D51C8004224AB /* EventMapperUITests.swift */,
 				AB4F61F61F7D51C8004224AB /* Info.plist */,
 			);
-			path = SideProjectUITests;
+			path = EventMapperUITests;
 			sourceTree = "<group>";
 		};
 		AB4F62091F7D544C004224AB /* Frameworks */ = {
@@ -222,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB4F61D01F7D51C8004224AB /* SideProject */ = {
+		AB4F61D01F7D51C8004224AB /* EventMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB4F61F91F7D51C8004224AB /* Build configuration list for PBXNativeTarget "SideProject" */;
+			buildConfigurationList = AB4F61F91F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapper" */;
 			buildPhases = (
 				AB4F61CD1F7D51C8004224AB /* Sources */,
 				AB4F61CE1F7D51C8004224AB /* Frameworks */,
@@ -236,14 +236,14 @@
 			);
 			dependencies = (
 			);
-			name = SideProject;
+			name = EventMapper;
 			productName = SideProject;
-			productReference = AB4F61D11F7D51C8004224AB /* SideProject.app */;
+			productReference = AB4F61D11F7D51C8004224AB /* EventMapper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB4F61E41F7D51C8004224AB /* SideProjectTests */ = {
+		AB4F61E41F7D51C8004224AB /* EventMapperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB4F61FC1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "SideProjectTests" */;
+			buildConfigurationList = AB4F61FC1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapperTests" */;
 			buildPhases = (
 				AB4F61E11F7D51C8004224AB /* Sources */,
 				AB4F61E21F7D51C8004224AB /* Frameworks */,
@@ -256,14 +256,14 @@
 			dependencies = (
 				AB4F61E71F7D51C8004224AB /* PBXTargetDependency */,
 			);
-			name = SideProjectTests;
+			name = EventMapperTests;
 			productName = SideProjectTests;
-			productReference = AB4F61E51F7D51C8004224AB /* SideProjectTests.xctest */;
+			productReference = AB4F61E51F7D51C8004224AB /* EventMapperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AB4F61EF1F7D51C8004224AB /* SideProjectUITests */ = {
+		AB4F61EF1F7D51C8004224AB /* EventMapperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB4F61FF1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "SideProjectUITests" */;
+			buildConfigurationList = AB4F61FF1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapperUITests" */;
 			buildPhases = (
 				AB4F61EC1F7D51C8004224AB /* Sources */,
 				AB4F61ED1F7D51C8004224AB /* Frameworks */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				AB4F61F21F7D51C8004224AB /* PBXTargetDependency */,
 			);
-			name = SideProjectUITests;
+			name = EventMapperUITests;
 			productName = SideProjectUITests;
-			productReference = AB4F61F01F7D51C8004224AB /* SideProjectUITests.xctest */;
+			productReference = AB4F61F01F7D51C8004224AB /* EventMapperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB4F61CC1F7D51C8004224AB /* Build configuration list for PBXProject "SideProject" */;
+			buildConfigurationList = AB4F61CC1F7D51C8004224AB /* Build configuration list for PBXProject "EventMapper" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -319,9 +319,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB4F61D01F7D51C8004224AB /* SideProject */,
-				AB4F61E41F7D51C8004224AB /* SideProjectTests */,
-				AB4F61EF1F7D51C8004224AB /* SideProjectUITests */,
+				AB4F61D01F7D51C8004224AB /* EventMapper */,
+				AB4F61E41F7D51C8004224AB /* EventMapperTests */,
+				AB4F61EF1F7D51C8004224AB /* EventMapperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -440,7 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4F61F51F7D51C8004224AB /* SideProjectUITests.swift in Sources */,
+				AB4F61F51F7D51C8004224AB /* EventMapperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,12 +449,12 @@
 /* Begin PBXTargetDependency section */
 		AB4F61E71F7D51C8004224AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AB4F61D01F7D51C8004224AB /* SideProject */;
+			target = AB4F61D01F7D51C8004224AB /* EventMapper */;
 			targetProxy = AB4F61E61F7D51C8004224AB /* PBXContainerItemProxy */;
 		};
 		AB4F61F21F7D51C8004224AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AB4F61D01F7D51C8004224AB /* SideProject */;
+			target = AB4F61D01F7D51C8004224AB /* EventMapper */;
 			targetProxy = AB4F61F11F7D51C8004224AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -576,10 +576,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SideProject/Info.plist;
+				INFOPLIST_FILE = EventMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapper;
+				PRODUCT_NAME = EventMapper;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,10 +594,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SideProject/Info.plist;
+				INFOPLIST_FILE = EventMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapper;
+				PRODUCT_NAME = EventMapper;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -614,14 +614,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SideProjectTests/Info.plist;
+				INFOPLIST_FILE = EventMapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProjectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideProject.app/SideProject";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventMapper.app/EventMapper";
 			};
 			name = Debug;
 		};
@@ -636,13 +636,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SideProjectTests/Info.plist;
+				INFOPLIST_FILE = EventMapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProjectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideProject.app/SideProject";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventMapper.app/EventMapper";
 			};
 			name = Release;
 		};
@@ -651,13 +651,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SideProjectUITests/Info.plist;
+				INFOPLIST_FILE = EventMapperUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProjectUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SideProject;
+				TEST_TARGET_NAME = EventMapper;
 			};
 			name = Debug;
 		};
@@ -666,20 +666,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SideProjectUITests/Info.plist;
+				INFOPLIST_FILE = EventMapperUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.SideProjectUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordonkrull.EventMapperUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SideProject;
+				TEST_TARGET_NAME = EventMapper;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB4F61CC1F7D51C8004224AB /* Build configuration list for PBXProject "SideProject" */ = {
+		AB4F61CC1F7D51C8004224AB /* Build configuration list for PBXProject "EventMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB4F61F71F7D51C8004224AB /* Debug */,
@@ -688,7 +688,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB4F61F91F7D51C8004224AB /* Build configuration list for PBXNativeTarget "SideProject" */ = {
+		AB4F61F91F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB4F61FA1F7D51C8004224AB /* Debug */,
@@ -697,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB4F61FC1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "SideProjectTests" */ = {
+		AB4F61FC1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB4F61FD1F7D51C8004224AB /* Debug */,
@@ -706,7 +706,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB4F61FF1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "SideProjectUITests" */ = {
+		AB4F61FF1F7D51C8004224AB /* Build configuration list for PBXNativeTarget "EventMapperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB4F62001F7D51C8004224AB /* Debug */,

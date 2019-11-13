@@ -1,6 +1,6 @@
 //
 //  ViewControllerSpec.swift
-//  SideProjectTests
+//  EventMapperTests
 //
 //  Created by Gordon Krull on 2017-09-28.
 //  Copyright © 2017 GK. All rights reserved.
@@ -10,7 +10,7 @@ import CoreLocation
 import Nimble
 import Quick
 
-@testable import SideProject
+@testable import EventMapper
 
 fileprivate class EventServiceStub: EventService {
     var stubbedEvents: [Event] = []
