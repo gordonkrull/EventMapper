@@ -9,7 +9,7 @@ import org.mockito.InjectMocks
 import org.mockito.junit.jupiter.MockitoExtension
 
 @ExtendWith(MockitoExtension::class)
-class EventsControllerTest {
+class EventsControllerTests {
 
     @InjectMocks
     lateinit var eventsController: EventsController
