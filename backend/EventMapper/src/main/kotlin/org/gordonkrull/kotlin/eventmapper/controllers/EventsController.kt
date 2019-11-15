@@ -1,7 +1,7 @@
-package org.gordonkrull.kotlin.sideproject.controllers
+package org.gordonkrull.kotlin.eventmapper.controllers
 
-import org.gordonkrull.kotlin.sideproject.models.Coordinate
-import org.gordonkrull.kotlin.sideproject.models.Event
+import org.gordonkrull.kotlin.eventmapper.models.Coordinate
+import org.gordonkrull.kotlin.eventmapper.models.Event
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
