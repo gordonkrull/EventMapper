@@ -1,4 +1,4 @@
-package org.gordonkrull.kotlin.eventmapper.models
+package org.gordonkrull.eventmapper.models
 
 /**
  * Created by gordonkrull on 2017-10-25.

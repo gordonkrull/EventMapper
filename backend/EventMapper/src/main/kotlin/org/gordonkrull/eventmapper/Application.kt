@@ -1,4 +1,4 @@
-package org.gordonkrull.kotlin.eventmapper
+package org.gordonkrull.eventmapper
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
